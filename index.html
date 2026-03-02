@@ -1,18 +1,82 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>School Notice Board</title>
     <style>
-        body { font-family: sans-serif; background-color: #f0f8ff; text-align: center; }
-        .notice { background: white; border-left: 5px solid red; margin: 20px; padding: 10px; border-radius: 5px; box-shadow: 2px 2px 5px #ccc; }
-        h1 { color: #333; }
+        /* This part is the "Paint" for your house */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background-color: #004a99; /* School Blue */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+        }
+        .notice-card {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-left: 8px solid #004a99; /* Blue stripe on the side */
+        }
+        .urgent {
+            border-left: 8px solid #ff4d4d; /* Red stripe for urgent */
+        }
+        .date {
+            color: #888;
+            font-size: 0.9em;
+        }
+        h3 {
+            margin-top: 0;
+            color: #333;
+        }
+        p {
+            color: #555;
+            line-height: 1.6;
+        }
     </style>
 </head>
 <body>
-    <h1>📢 Official School Notice Board</h1>
-    <div class="notice">
-        <h3>March 2, 2026: Half-Day Tomorrow!</h3>
-        <p>School will close at 12:00 PM due to teacher meetings.</p>
+
+    <header>
+        <h1>🏫 My School Notice Board</h1>
+        <p>Stay updated with the latest news!</p>
+    </header>
+
+    <div class="container">
+
+        <div class="notice-card urgent">
+            <span class="date">March 2, 2026</span>
+            <h3>🚨 Urgent: School Holiday</h3>
+            <p>Tomorrow is a public holiday. School will remain closed. Enjoy your break!</p>
+        </div>
+
+        <div class="notice-card">
+            <span class="date">March 1, 2026</span>
+            <h3>⚽ Sports Meet Registration</h3>
+            <p>All students who want to play Football or Basketball must sign up at the PE office by Friday.</p>
+        </div>
+
+        <div class="notice-card">
+            <span class="date">Feb 28, 2026</span>
+            <h3>📚 Library Books</h3>
+            <p>Please return any overdue library books by the end of this week to avoid a fine.</p>
+        </div>
+
     </div>
+
 </body>
 </html>
